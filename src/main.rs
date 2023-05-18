@@ -28,7 +28,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 async fn real_main() -> Result<()> {
     let arg = std::env::args().collect::<Vec<_>>();
     if arg.len() < 2 {
-        println!("Available verbs: fetch");
+        println!("Available verbs: fetch, process, crack, show");
         return Ok(());
     }
 
